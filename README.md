@@ -5,7 +5,7 @@ Climate System Phase Analysis is a framework which allow capturing the state of 
 - The hydrologic forecasts are produced through a temporal downscaling procedure of the seasonal precipitation forecast to feed a hydrologic model.
 - The forecast operational value is assessed by using the [Information Selection and Assessment framework](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015WR017044).
 
-Details about the framework and its application to the Lake Como basin are provided in Giuliani et al. "Improving seasonal forecasts through the state of multiple climate signals to inform water reservoir operations" submitted to Water Resources Research. This code is an improved version of the NIPA code originally developed by Brian Zimmerman.
+Details about the framework and its application to the Lake Como basin are provided in Giuliani et al. "Improving seasonal forecasts through the state of multiple climate signals to inform water reservoir operations" submitted to Water Resources Research. The code has been adapted from the original version of NIPA developed by Brian Zimmerman.
 
 
 ----
