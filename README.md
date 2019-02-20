@@ -11,7 +11,7 @@ Details about the framework and its application to the Lake Como basin are provi
 ----
 ### Copyright:
 
-Copyright 2018 NRM group - Politecnico di Milano
+Copyright 2019 NRM group (Politecnico di Milano) and Water Systems & Society Research Group (University of Wisconsin Madison).
 
 Developers: Matteo Giuliani, Marta Zaniolo, Andrea Castelletti, Paul Block, and Brian Zimmerman.
 
