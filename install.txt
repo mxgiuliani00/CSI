@@ -1,0 +1,15 @@
+This code was tested on computers running Linux or MacOS with Python 2.7.3
+
+Follow the procedure below to correctly install CSPA code:
+1) Open command prompt and verify that the Python version installed is 2.7.3
+	python --version
+2) Download and install Anaconda 4.4.0. Open command prompt and verify that the version installed is 4.4.0
+	conda --version
+3) Install the module manager PIP
+sudo easy_install pip
+4) Eliminate any data in the folder /DATA/nipa/SST
+5) Run NIPA 
+	python run_nipa.py
+
+If the procedure does not work, likely there are some missing packages you need to install: 
+	pip install nameofpackage
