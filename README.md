@@ -25,7 +25,7 @@ operations, Water Resources Research, 55
 
 Copyright 2019 NRM group (Politecnico di Milano) and Water Systems & Society Research Group (University of Wisconsin Madison).
 
-Developers: Matteo Giuliani, Marta Zaniolo, Andrea Castelletti, Paul Block, and Brian Zimmerman.
+Developers: Matteo Giuliani, Marta Zaniolo, Andrea Castelletti, Paul Block, Brian Zimmerman, Angelo Carlino, Alessandro Amaranto.
 
 CSI is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
