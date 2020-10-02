@@ -55,7 +55,7 @@ fig, axes = plt.subplots(M, 1, figsize = (6, 12))
 timeseries = {'years' : [], 'data' : [], 'hindcast': []}
 pc1 = {'pc1':[]}
 
-print 'NIPA running...'
+print('NIPA running...')
 
 if M == 1:
     phase = 'allyears'
@@ -68,8 +68,8 @@ if M == 1:
     timeseries['years'] = model.years
     timeseries['data'] = model.clim_data
     timeseries['hindcast'] = model.hindcast
-    print timeseries['years']
-    print timeseries['data']
+    print( timeseries['years'])
+    print( timeseries['data'])
     
     if map_flag:
         fig, axes, m = sstMap(model, fig = fig, ax = axes)
@@ -131,7 +131,7 @@ if not crv_flag:
     df1 = pd.DataFrame(pc1)
     df1.to_csv(pc_file)
 
-print 'NIPA run completed'
+print( 'NIPA run completed')
 
 
 

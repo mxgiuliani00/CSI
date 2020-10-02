@@ -128,7 +128,7 @@ class NIPAphase(object):
 
             count[p_value <= corrlevel] += 1
             if debug:
-                print 'Count max is %i' % count.max()
+                print( 'Count max is %i' % count.max())
 
 
         ###CREATE MASKED ARRAY USING THE COUNT AND BOOTCONF ATTRIBUTES
@@ -162,7 +162,7 @@ class NIPAphase(object):
                         if check.sum() >= lim:
                             dat[i,j] = True
                             count += 1
-            if debug: print 'Deleted %i grids' % count
+            if debug: print( 'Deleted %i grids' % count)
 
             self.corr_grid.mask = dat
             self.n_post_grid = dat.size - dat.sum()

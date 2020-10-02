@@ -27,6 +27,8 @@ def openDAPsst(version = '3b', debug = False, anomalies = True, **kwargs):
     '.anom/T/%28startmon%20startyr%29%28endmon%20endyr%29RANGEEDGES/T/nbox/0.0/boxAverage/dods'
     #SSTurl = 'http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.phi/P/%28700%29VALUES' +'/' + \
     #'.anom/T/%28startmon%20startyr%29%28endmon%20endyr%29RANGEEDGES/T/nbox/0.0/boxAverage/dods'
+    #SSTurl = 'http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.ERSST/.version' + version + '/' + \
+    #'.anom/T/%28startmon%20startyr%29%28endmon%20endyr%29RANGEEDGES/T/nbox/0.0/boxAverage/data.nc'
 
     if not anomalies:
        SSTurl = 'http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCDC/.ERSST/.version' + version + '/' + \
@@ -34,7 +36,7 @@ def openDAPsst(version = '3b', debug = False, anomalies = True, **kwargs):
         #SSTurl = 'http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP-NCAR/.CDAS-1/.MONTHLY/.Intrinsic/.PressureLevel/.phi/P/%28700%29VALUES' +'/' + \
     #'.anom/T/%28startmon%20startyr%29%28endmon%20endyr%29RANGEEDGES/T/nbox/0.0/boxAverage/dods'
 
-    print 'Preparing to download from %s' % (SSTurl)
+    print( 'Preparing to download from %s' % (SSTurl))
 
     i2m = int_to_month()
 
@@ -66,8 +68,8 @@ def openDAPsst(version = '3b', debug = False, anomalies = True, **kwargs):
         #var = seasonal_var(sstdata['grid'], sstdata['lat'], sstdata['lon'])
         #return var
 
-    print 'New SST field, will save to %s' % fp
-
+    print( 'New SST field, will save to %s' % fp)
+    print(SSTurl)
     for kw in DLargs:
         SSTurl = re.sub(kw, DLargs[kw], SSTurl)
 
@@ -76,7 +78,6 @@ def openDAPsst(version = '3b', debug = False, anomalies = True, **kwargs):
     dataset = open_url(SSTurl)
     arg = 'anom' if anomalies else 'sst'
     sst = dataset[arg]
-
 
     time = dataset['T']
     grid = sst.array[:,:,:,:].data.squeeze() # MODIFIED ANDREA: inserted "data"
@@ -92,7 +93,9 @@ def openDAPsst(version = '3b', debug = False, anomalies = True, **kwargs):
         print('Number of seasons is %i, number of months is %i' % (nseasons, kwargs['n_mon']))
     ntime = len(t)
 
-    idx = arange(0, ntime, nseasons)
+    idx = arange(0, ntime, nseasons).astype(int)
+    #print(idx)
+    #print(grid)
     sst = grid[idx]
     sstdata = {'grid':sst, 'lat':sstlat, 'lon':sstlon}
     var = seasonal_var(sst, sstlat, sstlon)
@@ -219,7 +222,7 @@ def load_clim_file(fp, debug = False):
     description = f.readline()
     years = f.readline()
     startyr, endyr = years[:4], years[5:9]
-    print description
+    print( description)
 
     #First load extended index
     data = np.loadtxt(fp, skiprows = 2)
@@ -337,8 +340,8 @@ def create_phase_index2(**kwargs):
         phaseind['allyears'] = p
     if nphase == 2:
         x = nyrs / nphase
-        p1[idx[:x]] = True; phaseind['neg'] = p1
-        p2[idx[x:]] = True; phaseind['pos'] = p2
+        p1[idx[:int(x)]] = True; phaseind['neg'] = p1
+        p2[idx[int(x):]] = True; phaseind['pos'] = p2
     if nphase == 3:
         if phases_even:
             x = nyrs / nphase

@@ -170,8 +170,8 @@ def sstMap(nipaPhase,  cmap = cm.jet, fig = None, ax = None):
 
 	lons, lats = np.meshgrid(lons,lats)
 
-        im1 = m.pcolormesh(lons,lats,data, vmin = np.min(levels), \
-vmax=np.max(levels), cmap = cmap, latlon=True)
+	im1 = m.pcolormesh(lons,lats,data, vmin = np.min(levels), \
+	vmax=np.max(levels), cmap = cmap, latlon=True)
 	divider = make_axes_locatable(ax)
 	cax = divider.append_axes('bottom', size='5%', pad=0.05)
 	fig.colorbar(im1, cax=cax, orientation='horizontal')
