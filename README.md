@@ -14,13 +14,11 @@ the climate system via artificial intelligence to improve seasonal forecasts and
 operations, Water Resources Research, 55
 ```
 
-### Versions and implementations:
+### Versions and implementations
 
-- **Master Branch**
-The current version has been updated to ensure compatibility with Python 3.X releases. 
+- **Master Branch**: the current version updated to ensure compatibility with Python 3.X releases. 
 
-- **Paper Branch**
-The original version (developed in Python 2.7.3) is in the [paper branch](https://github.com/mxgiuliani00/CSI/tree/Paper-Giuliani2019WRR). 
+- **Paper Branch**: the original version used in the paper and developed in Python 2.7.3) is in the [paper branch](https://github.com/mxgiuliani00/CSI/tree/Paper-Giuliani2019WRR). 
 
 ----
 ### Copyright:
