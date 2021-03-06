@@ -11,7 +11,7 @@ Details about the framework and its application to the Lake Como basin are provi
 
 Giuliani, M., M. Zaniolo, A. Castelletti, G. Davoli, and P. Block (2019), [Detecting the state of the climate system via artificial intelligence to improve seasonal forecasts and inform reservoir operations](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR025035), Water Resources Research, 55 - see [Paper-Giuliani2019WRR branch](https://github.com/mxgiuliani00/CSI/tree/Paper-Giuliani2019WRR)
 
-Zaniolo, M., M. Giuliani, S. Sinclair, P. Burlando, and A. Castelletti (2021), When timing matters - misdesigned dam filling impacts hydropower sustainability, Nature Communications - see [Paper-Zaniolo2021NatComm branch]
+Zaniolo, M., M. Giuliani, S. Sinclair, P. Burlando, and A. Castelletti (2021), When timing matters - misdesigned dam filling impacts hydropower sustainability, Nature Communications - see [Paper-Zaniolo2021NatComm branch](https://github.com/mxgiuliani00/CSI/tree/Paper-Zaniolo2021NatComm)
 
 
 
