@@ -7,18 +7,19 @@ Climate State Intelligence (CSI) is a framework which allow capturing the state 
 
 Details about the framework and its application to the Lake Como basin are provided in the paper. The code for the detection of climate teleconnections has been adapted from the original version of NIPA developed by Brian Zimmerman and Paul Block. The code for the seasonal precipitation forecasts is based on the ELM code used by Riccardo Taormina, Gulsah Karakaya, Stefano Galelli and Selin Damla Ahipasaoglu in the [W-QUEISS wrapper](https://github.com/stefano-galelli/Matlab-Multi-objective-Feature-Selection).
 
-**References** [Link to paper](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR025035)
-```
-Giuliani, M., M. Zaniolo, A. Castelletti, G. Davoli, and P. Block (2019), Detecting the state of 
-the climate system via artificial intelligence to improve seasonal forecasts and inform reservoir 
-operations, Water Resources Research, 55
-```
+**References** 
+
+Giuliani, M., M. Zaniolo, A. Castelletti, G. Davoli, and P. Block (2019), [Detecting the state of the climate system via artificial intelligence to improve seasonal forecasts and inform reservoir operations](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR025035), Water Resources Research, 55 - see [paper branch](https://github.com/mxgiuliani00/CSI/tree/Paper-Giuliani2019WRR)
+
+Zaniolo, M., M. Giuliani, S. Sinclair, P. Burlando, and A. Castelletti (2021), When timing matters - misdesigned dam filling impacts hydropower sustainability, Nature Communications - see [paper branch]
+
+
 
 ### Versions and implementations
 
 - **Master Branch**: the current version updated to ensure compatibility with Python 3.X releases. 
 
-- **Paper Branch**: the original version used in the paper and developed in Python 2.7.3) is in the [paper branch](https://github.com/mxgiuliani00/CSI/tree/Paper-Giuliani2019WRR). 
+- **Paper Branch**: the original version used in Giuliani et al. (2019) and developed in Python 2.7.3 is in the [paper branch](https://github.com/mxgiuliani00/CSI/tree/Paper-Giuliani2019WRR). 
 
 ----
 ### Copyright:
