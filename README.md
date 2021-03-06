@@ -9,7 +9,8 @@ Details about the framework and its application to the Lake Como basin are provi
 
 **References** 
 ```
-Zaniolo, M., M. Giuliani, S. Sinclair, P. Burlando, and A. Castelletti (2021), When timing matters - misdesigned dam filling impacts hydropower sustainability, Nature Communications
+Zaniolo, M., M. Giuliani, S. Sinclair, P. Burlando, and A. Castelletti (2021), When timing matters - misdesigned 
+dam filling impacts hydropower sustainability, Nature Communications
 ```
 
 
