@@ -9,9 +9,8 @@ Details about the framework and its application to the Lake Como basin are provi
 
 ### References
 ```
-Giuliani, M., M. Zaniolo, A. Castelletti, G. Davoli, and P. Block (2019), [Detecting the state of the climate system 
-via artificial intelligence to improve seasonal forecasts and inform reservoir operations](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019WR025035), 
-Water Resources Research, 55
+Giuliani, M., M. Zaniolo, A. Castelletti, G. Davoli, and P. Block (2019), Detecting the state of the climate system 
+via artificial intelligence to improve seasonal forecasts and inform reservoir operations, Water Resources Research, 55
 ```
 
 ----
