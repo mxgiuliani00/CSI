@@ -17,16 +17,16 @@ import math
 
 # Select the input-output files:
 index_file = './DATA/nao.txt'
-clim_file = './DATA/APGD_prcpComo.txt'
-filename = 'testComoNAO'
+clim_file = './DATA/SPEI6omo_19982018.txt'
+filename = 'testOMO'
 
 # Settings:
 M = 2               # number of climate signal's phases
-n_obs = 3           # number of observations (months)
-lag = 3             # lag-time (months) --> 3 = seasonal
-months = [1,2,3]    # months to consider (J,F,M)
-startyr = 1971      # beginning of the time period to analyze
-n_yrs = 38          # number of years to analyze
+n_obs = 4           # number of observations (months)
+lag = 4             # lag-time (months) --> 3 = seasonal
+months = [1,2,3,4]    # months to consider (J,F,M)
+startyr = 1999      # beginning of the time period to analyze
+n_yrs = 20          # number of years to analyze
 
 # Select the type of experiment:
 # crv_flag:
